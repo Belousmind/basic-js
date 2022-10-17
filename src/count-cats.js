@@ -26,6 +26,8 @@ const countCats = (arr) => {
     }, 0)
 }
 
+countCats([[0, 1, '^^'],[0, '^^', 2],['^^', 1, 2]])
+
 module.exports = {
   countCats
 };
