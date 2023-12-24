@@ -15,9 +15,23 @@ const { NotImplementedError } = require('../extensions/index.js');
 
 function encodeLine(/* str */) {
   throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+  // let uniq = Array.from(new Set(str.split('')));
+  // const arr = str.split('');
+  // let counts = [];
+  // let result = [];
+  // uniq.forEach((i, index) => {
+  //   if (arr.includes(i)) {
+  //     const matchNum = arr.filter((j) => i === j).length;
+  //     if (matchNum > 1) {
+  //       counts.push(matchNum);
+  //     }
+  //   }
+  //   result.push(counts[index]);
+  //   result.push(i);
+  // })
+  // return result.join('');
 }
-
+// console.log(encodeLine('abbcca'))
 module.exports = {
   encodeLine
 };
