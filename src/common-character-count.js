@@ -13,8 +13,21 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function getCommonCharacterCount(/* s1, s2 */) {
   throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
 }
+
+// const countOccurrences = (arr) => {
+//   const newArr = arr.split('').reduce((acc, item) => {
+//     acc[item] = (acc[item] || 0) + 1;
+//     return acc;
+//   }, {});
+//   return newArr;
+// } 
+
+// console.log(countOccurrences('aabcc'), countOccurrences('adcaa'))
+// return (countOccurrences(s1), countOccurrences(s2))
+
+// console.log(getCommonCharacterCount("aabcc", "adcaa"))
+
 
 module.exports = {
   getCommonCharacterCount
