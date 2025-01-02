@@ -10,28 +10,30 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For aabbbc should return 2a3bc
  *
  */
-
-// сначала ищем униканльые значения, далее считаем их и потом пищем кол-во и значение
-
+// должны возвращаться только те значения где подряд идут буквы
 function encodeLine(/* str */) {
   throw new NotImplementedError('Not implemented');
-  // let uniq = Array.from(new Set(str.split('')));
-  // const arr = str.split('');
-  // let counts = [];
-  // let result = [];
-  // uniq.forEach((i, index) => {
-  //   if (arr.includes(i)) {
-  //     const matchNum = arr.filter((j) => i === j).length;
-  //     if (matchNum > 1) {
-  //       counts.push(matchNum);
+  // const arr = str.split('').reduce((acc, item) => {
+  //   acc[item] = (acc[item] || 0) + 1;
+  //   return acc;
+  // }, {});
+  
+  // const result = (obj) => {
+  //   const arr = []
+  //   for (i in obj) {
+  //     if (obj[i] === 1) {
+  //       arr.push(`${i}`)
+  //     } else {
+  //       arr.push(`${obj[i]}${i}`)
   //     }
   //   }
-  //   result.push(counts[index]);
-  //   result.push(i);
-  // })
-  // return result.join('');
+  //   return arr;
+  // }
+  // const newStr = result(arr)
+  // return newStr.join('')
+
 }
-// console.log(encodeLine('abbcca'))
+
 module.exports = {
   encodeLine
 };
