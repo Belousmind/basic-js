@@ -18,7 +18,7 @@ const seasons = {
   
 }
 
-function getSeason(/* date */) {
+function getSeason(date) {
   // let month = date;
   // return month;
   throw new NotImplementedError('Not implemented');

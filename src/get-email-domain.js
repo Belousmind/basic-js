@@ -14,7 +14,7 @@ function getEmailDomain(email) {
   const index = email.lastIndexOf('@');
   return email.slice(index + 1);
 }
-console.log(getEmailDomain('.unusual.com@usual.com'))
+
 module.exports = {
   getEmailDomain
 };
